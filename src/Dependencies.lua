@@ -17,8 +17,6 @@
 Class = require 'lib/class'
 push = require 'lib/push'
 Timer = require 'lib/knife.timer'
-Sti = require 'sti'
-
 --
 -- our own code
 --
