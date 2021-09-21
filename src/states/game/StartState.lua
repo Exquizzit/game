@@ -11,7 +11,7 @@
 StartState = Class{__includes = BaseState}
 
 function StartState:init()
-    self.map = LevelMaker.generate(100, 10)
+    --self.map = LevelMaker.generate(100, 10)
     self.background = math.random(3)
 end
 
@@ -27,7 +27,7 @@ function StartState:render()
     love.graphics.draw(gTextures['backgrounds'], gFrames['backgrounds'][self.background], 0, 0)
     love.graphics.draw(gTextures['backgrounds'], gFrames['backgrounds'][self.background], 0,
         gTextures['backgrounds']:getHeight() / 3 * 2, 0, 1, -1)
-    self.map:render()
+    --self.map:render()
 
     love.graphics.setFont(gFonts['title'])
     love.graphics.setColor(0, 0, 0, 255)

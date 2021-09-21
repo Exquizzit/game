@@ -38,9 +38,8 @@ function Player:update(dt)
 
     self.x = self.x + 1
 
-    for i, tile in pairs(self.level.tiles) do
-      if self:collides(tile) then futureCollide = true end
-    end
+    local tile = self.level.layers.Tiles:getTileAtGridPosition(self.x, self.y + self.y / 2)
+    if tile and self:collides(tile) then futureCollide = true end
 
     self.x = self.x - 1
 

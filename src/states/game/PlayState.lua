@@ -19,7 +19,7 @@ function PlayState:init()
 end
 
 function PlayState:enter(params)
-    self.level =
+    self.level = cartographer.load("graphics/untitled.lua")
 
     -- self.player = {
     --   image = love.graphics.newImage("graphics/flag.png"),
@@ -85,7 +85,7 @@ function PlayState:render()
     -- translate the entire view of the scene to emulate a camera
     love.graphics.translate(-math.floor(self.camX), -math.floor(self.camY))
 
-    self.level:render()
+    self.level:draw()
 
     self.player:render()
 

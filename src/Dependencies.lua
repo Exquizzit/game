@@ -17,6 +17,7 @@
 Class = require 'lib/class'
 push = require 'lib/push'
 Timer = require 'lib/knife.timer'
+cartographer = require 'lib.cartographer'
 --
 -- our own code
 --

@@ -10,8 +10,8 @@
 
 GameLevel = Class{}
 
-function GameLevel:init(entities, objects, tilemap)
-    self.tiles = {}
+function GameLevel:init(tilemap)
+
 end
 
 function GameLevel:update(dt)
@@ -19,7 +19,7 @@ function GameLevel:update(dt)
 end
 
 function GameLevel:render()
-    for i, tile in pairs(self.tiles)
+    for i, tile in pairs(self.tiles) do
       tile:render()
     end
 end
